@@ -6,13 +6,14 @@
 
 def find_anagram(word, anagram):
         # [assignment] code added
-        str1 = "link"
-        str2 = "kiln"
-        str1_anagram = sorted(str1)
-        str2_anagram = sorted(str2)
+        word = input("Please write a word: \n")
+        anagram = input("please write an anagram: \n")
+
+        str1_anagram = sorted(word)
+        str2_anagram = sorted(anagram)
                             
         if str1_anagram == str2_anagram:
             return True
         else:
             return False
-print(find_anagram("link", "kiln"))
+print(find_anagram("word", "anagram"))
